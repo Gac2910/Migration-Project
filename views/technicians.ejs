@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1><%= subHeader %></h1>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-4">
+                <form id="techniciansForm">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="First Name" class="form-control" required>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Last Name" class="form-control" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" class="form-control" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Phone Number" class="form-control" required>
+                    <button id="submitTechnicians" class="btn btn-success" type="submit">Submit Issue</button>
+                </form>
+            </div>
+            <div class="col-lg-8">
+                <table>
+                    <colgroup span="4" width="25%"></colgroup>
+                    <thead>
+                        <tr>
+                            <th>Technician Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

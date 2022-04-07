@@ -1,0 +1,92 @@
+body {
+    background: rgb(127,172,167);
+    background-image: url("/images/handyman.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    min-height: 100vh;
+}
+header {
+    background: rgb(59, 59, 59);
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 5px;
+    margin: 30px auto;
+    text-align: justify;
+}
+header h1, nav {
+    display: inline;
+}
+header .btn {
+    margin-top: 4px;
+    background: transparent;
+    color: white;
+}
+header .btn:hover {
+    color: white;
+    border: 1px solid white;
+}
+label {
+    display: block;
+}
+select, input[type=text] {
+    display: block;
+    width: 100%;
+}
+.select2 {
+    width: 100% !important;
+    text-align: justify;
+}
+button[type=submit] {
+    display: block;
+    margin: 25px auto;
+}
+table {
+    width: 100%;
+}
+tbody tr:nth-child(odd) {
+    background: rgb(223, 223, 223);
+}
+th, label {
+    font-size: 20px;
+}
+td {
+    font-size: 17px;
+}
+th, td {
+    text-align: center;
+}
+.content-row {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+.fa {
+    font-size: 30px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.fa:hover {
+    color: white;
+}
+.swal2-popup {
+    width: 30% !important;
+    height: 100% !important;
+}
+.swal2-popup input {
+    font-size: 15px;
+}
+.swal2-title {
+    font-size: 35px !important;
+}
+.swal2-confirm, .swal2-cancel {
+    font-size: 15px !important;
+}
+.swal2-html-container {
+    font-size: 25px !important;
+}
+.swal2-html-container input, .swal2-html-container select {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+<%- include('partials/header') %>
+
+    <section class="container content-container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1><%= subHeader %></h1>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-4">
+                <form id="issuesForm">
+                    <label for="description">Description of the issue</label>
+                    <input type="text" id="description" placeholder="Description" class="form-control" required>
+                    <label for="severity">Severity</label>
+                    <select id="severity" class="form-control" required>
+                        <option value="" hidden>Select a Severity</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <label for="status">Status</label>
+                    <select id="status" class="form-control" required>
+                        <option value="" hidden>Select A Status</option>
+                        <option value="Opened">Opened</option>
+                        <option value="Closed">Closed</option>
+                    </select>
+                    <label for="technicians">Assigned to technician</label>
+                    <select id="technicians" class="form-control" required>
+                        <option value=""></option>
+                    </select>
+                    <button id="submitIssue" class="btn btn-success" type="submit">Submit Issue</button>
+                </form>
+            </div>
+            <div class="col-lg-8">
+                <table>
+                    <colgroup span="5" width="20%"></colgroup>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Severity</th>
+                            <th>Status</th>
+                            <th>Assigned To</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+<%- include('partials/footer') %>
+</body>
+</html>
